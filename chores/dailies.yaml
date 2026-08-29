@@ -1,0 +1,27 @@
+/* rev-f3a21c-20260829 dailies.yaml */
+/* rev-e1f20a-20260829 dailies.yaml */
+/* rev-d8e14f-20260829 dailies.yaml */
+# rev-b8f3c1-20260825
+# nte daily automation - daily commissions + login rewards
+name: dailies
+steps:
+  - recognize: login_reward_popup
+    action: click_center
+    optional: true
+
+  - recognize: commission_menu_icon
+    action: click
+
+  - loop: 4
+    steps:
+      - recognize: commission_entry
+        action: click_first_available
+      - recognize: auto_pathing_button
+        action: click
+      - wait_for: commission_complete
+        timeout_ms: 180000
+      - recognize: claim_button
+        action: click
+
+  - recognize: back_button
+    action: click

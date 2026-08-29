@@ -1,0 +1,30 @@
+// rev-f3a21c-20260829 settings.json
+// rev-e1f20a-20260829 settings.json
+// rev-d8e14f-20260829 settings.json
+{
+  "capture": {
+    "method": "auto",
+    "fps": 10,
+    "resolution": "1920x1080"
+  },
+  "framework": {
+    "name": "MaaFramework",
+    "version": "5.12.3"
+  },
+  "game": {
+    "window_title": "Neverness to Everness",
+    "supported_version": "1.2+"
+  },
+  "tasks": {
+    "default": [
+      "dailies",
+      "login_rewards"
+    ],
+    "pipeline_dir": "tasks/"
+  },
+  "schedule": {
+    "enabled": false,
+    "daily_run": "06:00"
+  },
+  "_rev": "rev-b8f3c1-20260825"
+}

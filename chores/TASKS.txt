@@ -1,0 +1,42 @@
+/* rev-f3a21c-20260829 TASKS.txt */
+/* rev-e1f20a-20260829 TASKS.txt */
+/* rev-d8e14f-20260829 TASKS.txt */
+# rev-b8f3c1-20260825
+MaaNTE - Task Guide
+===================
+
+BUILT-IN TASKS (tasks/ folder, YAML)
+
+dailies
+   nte daily automation: commissions, login rewards, daily tasks.
+   schedule support for unattended runs.
+
+farm
+   nte auto farm: material, currency and EXP loops with route
+   optimization (v1.3.0 improved routing).
+
+combat_assist
+   nte combat assist: rotation profiles, skill timing, dodge assist.
+   new profiles for the latest Esper characters.
+
+gacha_tracker
+   nte gacha roll tracker: pull history, pity counter, rate stats.
+   exports pull history to CSV.
+
+anomaly_investigation
+   auto-completes investigation task chains (updated for NTE v1.2).
+
+esper_training
+   automated Esper training routines.
+
+vehicle_missions
+   auto-completes driving objectives with route definitions.
+
+CUSTOM TASKS
+write your own YAML in tasks/ - the engine picks it up on launch.
+see dailies.yaml for the step syntax.
+
+SAFETY
+MaaNTE uses computer vision only: it reads the screen and simulates
+input. no injection, no memory reads, no file modification - the
+safest automation approach for Neverness to Everness.
